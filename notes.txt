@@ -1,0 +1,25 @@
+Get Excel Sheet Viewer on VS Code
+
+
+
+
+
+I'd recommend:
+
+Use Excel if:
+
+One-time cleaning task
+Small dataset
+Simple operations
+Non-technical team
+Need immediate visual feedback
+
+
+Use Python if:
+
+Repeated cleaning tasks
+Large datasets
+Complex operations
+Need reproducibility
+Part of larger automation
+Multiple people need to use same process
