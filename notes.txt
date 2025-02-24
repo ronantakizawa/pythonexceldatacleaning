@@ -1,7 +1,7 @@
 Get Excel Sheet Viewer on VS Code
 
 
-
+Install Pandas
 
 
 I'd recommend:
