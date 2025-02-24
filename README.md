@@ -44,13 +44,6 @@ A collection of simple Python scripts for cleaning Excel data, designed for coll
 - Extra spaces
 - Typos
 
-## File Outputs
-
-- `student_data.xlsx` - Original data with issues
-- `student_data_clean.xlsx` - Data with missing values removed
-- `student_data_no_duplicates.xlsx` - Data with duplicates removed
-- `student_data_standardized.xlsx` - Data with standardized formatting
-
 ## Dependencies
 See requirements.txt for the complete list of dependencies. Main packages used:
 - pandas
