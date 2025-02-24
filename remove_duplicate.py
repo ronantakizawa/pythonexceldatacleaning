@@ -8,7 +8,7 @@ def remove_duplicates(file_path):
     df_no_duplicates = df.drop_duplicates()
     
     # Save cleaned data
-    df_no_duplicates.to_excel('student_data.xlsx', index=False)
+    df_no_duplicates.to_excel('student_data_duplicate.xlsx', index=False)
 
 # Direct execution
 remove_duplicates('student_data.xlsx')

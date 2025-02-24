@@ -16,6 +16,6 @@ def handle_missing_values(file_path):
     df_filled['Major'] = df_filled['Major'].fillna(df_filled['Major'].mode()[0])
     
     # Save processed datasets
-    df_filled.to_excel('student_data.xlsx', index=False)
+    df_filled.to_excel('student_data_missing.xlsx', index=False)
 
 handle_missing_values('student_data.xlsx')

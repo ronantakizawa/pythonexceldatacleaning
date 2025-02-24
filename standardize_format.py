@@ -3,7 +3,6 @@ import pandas as pd
 def standardize_format(file_path):
     # Read the Excel file
     df = pd.read_excel(file_path)
-    
     # 1. Standardize text case
     df['Name'] = df['Name'].str.title()  # Capitalize first letter of each word
     
@@ -18,9 +17,6 @@ def standardize_format(file_path):
     
     # 4. Standardize date format
     df['Enrollment Date'] = pd.to_datetime(df['Enrollment Date']).dt.strftime('%Y-%m-%d')
-    
-    # 5. Round numeric values to consistent decimal places
-    df['GPA'] = df['GPA'].round(2)
     
     # Save processed dataset
     df.to_excel('student_data_standardized.xlsx', index=False)

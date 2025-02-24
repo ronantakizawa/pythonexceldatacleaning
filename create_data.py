@@ -8,7 +8,6 @@ def create_sample_data():
     
     # Create sample student data
     data = {
-        'Student ID': range(1001, 1021),  # 20 students
         'Name': [
             'John Smith', 'Emma Wilson', 'Michael Brown', 'Sarah Davis', 'James Miller',
             'Lisa Garcia', 'David Lee', 'Jennifer Martinez', 'Robert Taylor', 'Maria Anderson',
@@ -27,7 +26,7 @@ def create_sample_data():
         ]
     }
     
-    # Introduce some common data issues
+    # Create DataFrame
     df = pd.DataFrame(data)
     
     # Add missing values
@@ -44,8 +43,11 @@ def create_sample_data():
     # Add leading/trailing spaces
     df.loc[3, 'Major'] = ' Biology  '
     
-    # Add typos
+    # Add typo in Major
     df.loc[15, 'Major'] = 'Computter Science'
+    
+    # Add incorrect date format (MM/DD/YYYY instead of YYYY-MM-DD)
+    df.loc[8, 'Enrollment Date'] = '09/15/2023'
     
     # Save to Excel file
     df.to_excel('student_data.xlsx', index=False)
@@ -55,7 +57,8 @@ def create_sample_data():
     print("2. Duplicate student records")
     print("3. Inconsistent name formatting (upper/lower case)")
     print("4. Leading/trailing spaces in Major column")
-    print("5. Typos in Major column")
+    print("5. Typo in Major column ('Computter Science')")
+    print("6. Incorrect date format on row 9 (09/15/2023)")
+    print("7. A GPA with 3 decimal places (3.765) that needs rounding to 2 decimal places")
 
-if __name__ == "__main__":
-    create_sample_data()
+create_sample_data()
